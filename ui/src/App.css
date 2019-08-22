@@ -1,0 +1,10 @@
+.two-column-layout {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: 2fr 330px;
+  grid-gap: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}

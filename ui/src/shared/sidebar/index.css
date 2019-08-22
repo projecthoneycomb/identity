@@ -1,0 +1,25 @@
+.container {
+  background: var(--container-background);
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+h2 {
+  font-weight: normal;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  color: var(--primary-text-color);
+  opacity: 0.6;
+}
+
+hr {
+  opacity: 0.2;
+  margin: 15px 0;
+}

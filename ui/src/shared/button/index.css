@@ -1,0 +1,47 @@
+button {
+  outline: none;
+  border: none;
+  background: #7171711a;
+  display: flex;
+  height: 46px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 15px;
+  font-size: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button:last-of-type {
+  margin-bottom: 0;
+}
+
+.text-container {
+  margin: 0 10px;
+}
+
+button:hover {
+  background: #7171712f;
+}
+
+.branded {
+  background: #ea573d0e;
+  color: var(--brand-color);
+}
+
+.branded:hover {
+  background: #ea573d2c;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal-container button {
+  height: 38px;
+  margin-top: 10px;
+  width: fit-content;
+  align-self: center;
+  padding: 0 5px;
+}
