@@ -301,6 +301,10 @@
         "version": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
         "signature": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c"
       },
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts": {
+        "version": "2cba9752a0198d6c9cc96bc63463020f6a00de7d8f63cfd6a5eb35975662b09a",
+        "signature": "2cba9752a0198d6c9cc96bc63463020f6a00de7d8f63cfd6a5eb35975662b09a"
+      },
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/range-parser/index.d.ts": {
         "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
         "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b"
@@ -328,10 +332,6 @@
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/express/index.d.ts": {
         "version": "1f92cdebe2b1e0e6309ccdb6e8700cfd2d3e7131c7842f91b38ed1e4ff2a7090",
         "signature": "1f92cdebe2b1e0e6309ccdb6e8700cfd2d3e7131c7842f91b38ed1e4ff2a7090"
-      },
-      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts": {
-        "version": "2cba9752a0198d6c9cc96bc63463020f6a00de7d8f63cfd6a5eb35975662b09a",
-        "signature": "2cba9752a0198d6c9cc96bc63463020f6a00de7d8f63cfd6a5eb35975662b09a"
       },
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/helmet/index.d.ts": {
         "version": "4f2b3e2cbcec9d77e9e80903763d398534d37778074c066fb9176ef02b6e3414",
@@ -557,25 +557,37 @@
         "version": "fa27b6a6439f70d5da1ab9087eec658130da11c92470985cc617aa7fab4849e3",
         "signature": "a45d5e7a4141f06d386bc57cd656348c63bfb7e6baa80b8e6798eebffd6ff1ea"
       },
-      "/users/james/documents/projects/comb-identity/server/src/index.ts": {
-        "version": "3ef9bb7db7ae6c57a1eef9d7a3b2113349790abeb2b4cf35f50eb8cf1b72338d",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
-      },
-      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts": {
-        "version": "d82ebfeb20b7f4fcde752795b35a61c26ee9709c0c11efdd9eac7fbe32379d20",
-        "signature": "0fc82fbaf4074fa4a9d3a4593a5c843d4eedef53cf728f90cd51fcf0ed4ecc2b"
-      },
       "/users/james/documents/projects/comb-identity/server/node_modules/azure-storage/typings/azure-storage/azure-storage.d.ts": {
         "version": "9de12199c4eec14369020aeb2aea327d9237f002244ffc53ae5e2622986b3986",
         "signature": "9de12199c4eec14369020aeb2aea327d9237f002244ffc53ae5e2622986b3986"
       },
       "/users/james/documents/projects/comb-identity/server/src/services/client.ts": {
-        "version": "70537458ca648739e389042bd6eac8992dd81f7326d9371d04162402007adbcf",
-        "signature": "4e58a1010b12a302a2cdd1ccdce1168708cd3d0cc324494e50bf54f7dc458572"
+        "version": "b214026014ea19234c1ca85f7fb1361886731c031bb009201ac14c239fbd9047",
+        "signature": "8c11e5546a65027b4efae0cc62c147a3b412548a024ca4920c79f8a19f5bd0be"
+      },
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/interfaces.d.ts": {
+        "version": "3ba72b1127de9897cf5b2de9be1d2d91166d1335a096435e59b0797745b7c3f1",
+        "signature": "3ba72b1127de9897cf5b2de9be1d2d91166d1335a096435e59b0797745b7c3f1"
+      },
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/index.d.ts": {
+        "version": "ad52430a0480fd221ff10281a93e3683cbc6666027e24aea148db93d732a68f7",
+        "signature": "ad52430a0480fd221ff10281a93e3683cbc6666027e24aea148db93d732a68f7"
+      },
+      "/users/james/documents/projects/comb-identity/server/src/services/organisation-service.ts": {
+        "version": "4d9b0d82f63c4b48796c80194941f339606d84e690364bfd1ef1c9f82556c1ea",
+        "signature": "ec5652a52325482a98974d03694239b0e525d7fa694b6d497fca2fbf29ff657c"
       },
       "/users/james/documents/projects/comb-identity/server/src/services/index.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "version": "1019913685111f45a2702d87bcbdc66242c62058ea06bea974b605b066fbadae",
+        "signature": "458120015967c2e757c2a2f4244256d41c00db1692a32e4d685d4fba54afaaf9"
+      },
+      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts": {
+        "version": "f9afc79fd1fca19235e6815f5a8f3c716954670e8b8da1af7369fc3602561196",
+        "signature": "0fc82fbaf4074fa4a9d3a4593a5c843d4eedef53cf728f90cd51fcf0ed4ecc2b"
+      },
+      "/users/james/documents/projects/comb-identity/server/src/index.ts": {
+        "version": "07f605db32aab90e09458004e1bdbb310422060d55c972823c679c1933a023cc",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       }
     },
     "options": {
@@ -990,6 +1002,11 @@
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/globals.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts"
       ],
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/range-parser/index.d.ts": [
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
@@ -1029,11 +1046,6 @@
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/body-parser/index.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/serve-static/index.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/express-serve-static-core/index.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts": [
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/index.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -1369,19 +1381,6 @@
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/james/documents/projects/comb-identity/server/src/index.ts": [
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/express/index.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/helmet/index.d.ts",
-        "/users/james/documents/projects/comb-identity/server/src/helpers/logging.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts": [
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/express/index.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/james/documents/projects/comb-identity/server/node_modules/azure-storage/typings/azure-storage/azure-storage.d.ts": [
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/events.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/url.d.ts",
@@ -1394,7 +1393,43 @@
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/interfaces.d.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/index.d.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/interfaces.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/src/services/organisation-service.ts": [
+        "/users/james/documents/projects/comb-identity/server/src/services/client.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/azure-storage/typings/azure-storage/azure-storage.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/james/documents/projects/comb-identity/server/src/services/index.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/azure-storage/typings/azure-storage/azure-storage.d.ts",
+        "/users/james/documents/projects/comb-identity/server/src/services/client.ts",
+        "/users/james/documents/projects/comb-identity/server/src/services/organisation-service.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/express/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/src/services/index.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/src/index.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/express/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/helmet/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/body-parser/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/src/helpers/logging.ts",
+        "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
       ]
@@ -1790,6 +1825,11 @@
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/globals.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts"
       ],
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/range-parser/index.d.ts": [
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
@@ -1829,11 +1869,6 @@
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/body-parser/index.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/serve-static/index.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/express-serve-static-core/index.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts": [
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/index.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -2164,9 +2199,6 @@
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts": [
-        "/users/james/documents/projects/comb-identity/server/node_modules/@types/express-serve-static-core/index.d.ts"
-      ],
       "/users/james/documents/projects/comb-identity/server/node_modules/azure-storage/typings/azure-storage/azure-storage.d.ts": [
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/events.d.ts",
         "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/url.d.ts",
@@ -2176,6 +2208,25 @@
       ],
       "/users/james/documents/projects/comb-identity/server/src/services/client.ts": [
         "/users/james/documents/projects/comb-identity/server/node_modules/azure-storage/typings/azure-storage/azure-storage.d.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/interfaces.d.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/index.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/index.d.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/interfaces.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/util.d.ts",
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/src/services/organisation-service.ts": [
+        "/users/james/documents/projects/comb-identity/server/src/services/client.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/src/services/index.ts": [
+        "/users/james/documents/projects/comb-identity/server/src/services/organisation-service.ts"
+      ],
+      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts": [
+        "/users/james/documents/projects/comb-identity/server/node_modules/@types/express-serve-static-core/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -2254,6 +2305,7 @@
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/util.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/globals.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/node/ts3.2/index.d.ts",
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/range-parser/index.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/express-serve-static-core/index.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/mime/index.d.ts",
@@ -2261,7 +2313,6 @@
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/connect/index.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/body-parser/index.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/express/index.d.ts",
-      "/users/james/documents/projects/comb-identity/server/node_modules/@types/dotenv/index.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/@types/helmet/index.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/applicationinsights/out/library/traceparent.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/applicationinsights/out/library/tracestate.d.ts",
@@ -2318,11 +2369,14 @@
       "/users/james/documents/projects/comb-identity/server/node_modules/applicationinsights/out/library/nodeclient.d.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/applicationinsights/out/applicationinsights.d.ts",
       "/users/james/documents/projects/comb-identity/server/src/helpers/logging.ts",
-      "/users/james/documents/projects/comb-identity/server/src/index.ts",
-      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts",
       "/users/james/documents/projects/comb-identity/server/node_modules/azure-storage/typings/azure-storage/azure-storage.d.ts",
-      "/users/james/documents/projects/comb-identity/server/src/services/client.ts",
-      "/users/james/documents/projects/comb-identity/server/src/services/index.ts"
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/interfaces.d.ts",
+      "/users/james/documents/projects/comb-identity/server/node_modules/@types/uuid/index.d.ts",
+      "/users/james/documents/projects/comb-identity/server/src/services/organisation-service.ts",
+      "/users/james/documents/projects/comb-identity/server/src/services/index.ts",
+      "/users/james/documents/projects/comb-identity/server/src/routers/organisation-router.ts",
+      "/users/james/documents/projects/comb-identity/server/src/index.ts",
+      "/users/james/documents/projects/comb-identity/server/src/services/client.ts"
     ]
   },
   "version": "3.5.3"
