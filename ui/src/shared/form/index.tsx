@@ -32,12 +32,7 @@ export default class Form extends React.Component<IFormProps, IFormState> {
       formObject[key] = value;
     });
 
-    console.log(formObject);
-
-
-    
-    this.setState({errorMessage: 'You’re missing a name for your organisation, please enter and try again.'})
-    this.props.onSubmit();
+    this.props.onSubmit(formObject);
   }
 
   render() {
