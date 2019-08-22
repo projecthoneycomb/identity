@@ -36,6 +36,11 @@ stages:
         command: 'custom'
         workingDir: '$(System.DefaultWorkingDirectory)/ui'
         customCommand: 'run -s build'
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)/ui'
+        Contents: 'process.json'
+        TargetFolder: '$(System.DefaultWorkingDirectory)/ui/build'
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
