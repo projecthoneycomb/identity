@@ -1,4 +1,25 @@
 import { TableService, TableUtilities, TableQuery } from 'azure-storage';
+import DatabaseError from '../errors/database-error';
+
+interface AzureResultEntity {
+  '_': string,
+  type: string
+}
+
+interface AzureInputEntity {
+  [key: string]: TableUtilities.entityGenerator.EntityProperty<unknown>
+}
+
+interface AzureEntry {
+  [key: string]: AzureResultEntity
+}
+
+interface QueryResponse {
+  entries: AzureEntry[]
+}
+
+
+
 
 export default class TableStorageClient {
   az: TableService;
@@ -13,7 +34,7 @@ export default class TableStorageClient {
     });
   }
 
-  private mapEntityToObject(entity: {[key: string]: { '_': string }}) {
+  private mapEntityToObject(entity: AzureEntry) {
     const object: {[key: string]: string} = {};
     for (let key in entity) {
       object[key] = entity[key]['_'];
@@ -21,15 +42,15 @@ export default class TableStorageClient {
     return object;
   }
 
-  private mapEntitiesToObjects(entities: Array<{[key: string]: { '_': string }}>) {
-    return entities.map(((entity: {[key: string]: { '_': string }}) => this.mapEntityToObject(entity)));
+  private mapEntitiesToObjects(entities: AzureEntry[]) {
+    return entities.map(((entity: AzureEntry) => this.mapEntityToObject(entity)));
   }
 
   getAll() {
     return new Promise((resolve, reject) => {
       const query = new TableQuery();
       // @ts-ignore
-      this.az.queryEntities(this.tableName, query, null, (error, result) => {
+      this.az.queryEntities(this.tableName, query, null, (error, result: QueryResponse) => {
         resolve(this.mapEntitiesToObjects(result.entries)); 
       })
     });
@@ -47,9 +68,10 @@ export default class TableStorageClient {
 
   }
 
-  createOrUpdateByPartitionAndId(entity: {[key: string]: TableUtilities.entityGenerator.EntityProperty<unknown>}) {
+  createOrUpdateByPartitionAndId(entity: AzureInputEntity) {
     return new Promise((resolve, reject) => {
       this.az.insertOrReplaceEntity(this.tableName, entity, (error, result) => {
+        if (error) reject(new DatabaseError(error));
         resolve(result);
       })
     });

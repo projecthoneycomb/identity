@@ -1,6 +1,7 @@
 import TableStorageClient from "./client";
 import { TableUtilities, TableService } from 'azure-storage';
 import { v4 } from 'uuid';
+import MissingParameterError from "../errors/missing-parameter-error";
 
 
 export default class OrganisationService {
@@ -14,7 +15,7 @@ export default class OrganisationService {
   async createOrganisation(name?: string) {
 
     if(!name) {
-      throw { msg: 'No name bitch' };
+      throw new MissingParameterError('name');
     }
 
     const entity = {
