@@ -11,7 +11,7 @@ export default class Header extends React.Component {
             <path transform="translate(-105.1 -109.82)" d="M127.432,127.609l-1.324-.977-11.13,6.518.076,12.884,11.206,6.372,11.13-6.518L137.314,133l-5.606-3.1V131.3l-1.388.749,4.13,2.627.047,9.578-8.265,4.85-8.318-4.728-.076-9.59,8.306-5.032,1.283-.749" fill="#fff" data-name="Path 38"/>
           </svg>
         </a>
-        <h2 className="hero-title">Project <strong>Identity</strong></h2>
+        <h2 className="hero-title">{this.props.children}</h2>
       </div>
     </header>
   }

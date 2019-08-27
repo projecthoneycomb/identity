@@ -1,25 +1,7 @@
 import { TableService, TableUtilities, TableQuery } from 'azure-storage';
 import DatabaseError from '../errors/database-error';
-
-interface AzureResultEntity {
-  '_': string,
-  type: string
-}
-
-interface AzureInputEntity {
-  [key: string]: TableUtilities.entityGenerator.EntityProperty<unknown>
-}
-
-interface AzureEntry {
-  [key: string]: AzureResultEntity
-}
-
-interface QueryResponse {
-  entries: AzureEntry[]
-}
-
-
-
+import GenericError from '../errors/generic-error';
+import { AzureEntry, AzureInputEntity, QueryResponse } from './client-types';
 
 export default class TableStorageClient {
   az: TableService;
@@ -60,8 +42,21 @@ export default class TableStorageClient {
 
   }
 
-  getById() {
+  getById(id: string) {
+    return new Promise((resolve, reject) => {
+      const query = new TableQuery();
+      query.where('RowKey == ?', id);
+      // @ts-ignore
+      this.az.queryEntities(this.tableName, query, null, (error, result: QueryResponse) => {
+        let results = this.mapEntitiesToObjects(result.entries);
+        if(results.length > 1) {
+          throw new GenericError('Something has gone wonky here.');
+        }
 
+        const [doc] = results;
+        resolve(doc); 
+      })
+    });
   }
 
   getByPartitionAndId() {

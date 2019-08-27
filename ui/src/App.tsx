@@ -14,9 +14,15 @@ import Authorise from './shared/auth/authorise';
 import CreateOrganisationModal from './organisation/create';
 
 function OrganisationList() {
-  return <div className="container">
-    <h2>Organisations</h2>
-    <hr></hr>
+  return <div className="two-column-layout-center">
+    <div className="container">
+      <h2>Organisations</h2>
+      <hr></hr>
+    </div>
+    <div className="container">
+      <h2>James’s Academy</h2>
+      <hr></hr>
+    </div>
   </div>;
 }
 
@@ -33,6 +39,7 @@ function Main(){
       <SecureRoute path="/organisations" component={OrganisationList}></SecureRoute>
       <SecureRoute path="/users" component={UserList}></SecureRoute>
     </Switch>
+    <SecureRoute path="/organisations/new" component={CreateOrganisationModal}></SecureRoute>
     <Sidebar>
       <Button type="branded" icon={add}>
         Create <strong>new invite</strong>
@@ -50,9 +57,8 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="App">
-        <Header></Header>
+        <Header>Honeycomb <strong>IAM</strong></Header>
         <SecureRoute path="/" component={Main}></SecureRoute>
-        <SecureRoute path="/organisations/new" component={CreateOrganisationModal}></SecureRoute>
         <Route path="/login" component={Login}></Route>
         <Route path="/authorise" component={Authorise}></Route>
       </div>

@@ -1,26 +1,8 @@
-export default class GenericError extends Error {
+import BaseError from './error';
 
-  code: number;
+export default class GenericError extends BaseError {
   
   constructor(message: string) {
-    super(message);
-    this.name = this.constructor.name;
-    this.message = message;
-    this.code = 500;
-    Error.captureStackTrace(this, this.constructor);
-  }
-
-  toJSON() {
-    const json: any = {
-      name: this.name,
-      message: this.message,
-      code: this.code
-    }
-
-    if(process.env.NODE_ENV === 'development') {
-      json.stack = this.stack;
-    }
-
-    return json;
+    super(message, 500);
   }
 }
